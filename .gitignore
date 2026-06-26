@@ -37,3 +37,7 @@ build/
 
 # Dependencies (if Node.js is added later)
 node_modules/
+
+# Claude Code (local-only — not shared via remote)
+CLAUDE.md
+.claude/
