@@ -3,157 +3,179 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>你的姓名｜个人简历</title>
-  <meta name="description" content="你的姓名 - 个人简历与作品集" />
+  <title>Eugene NG — 信号处理 / 深度学习算法工程师</title>
+  <meta name="description" content="Eugene NG 个人简历 — 信息与通信工程硕士，专注于雷达信号处理、深度学习与智能感知" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
-    <div class="container header-grid">
-      <div class="avatar-wrap">
-        <!-- 如果你暂时没有头像，把下一行 img 注释掉即可 -->
-        <img class="avatar" src="assets/avatar.png" alt="头像" />
-      </div>
-
-      <div class="header-main">
-        <h1 class="name">你的姓名</h1>
-        <p class="headline">目标岗位｜方向关键词（如：后端开发 / 算法 / 产品）</p>
-
-        <div class="contact">
-          <a href="mailto:your_email@example.com">your_email@example.com</a>
-          <span class="dot">•</span>
-          <a href="https://www.linkedin.com/in/your-id" target="_blank" rel="noreferrer">LinkedIn</a>
-          <span class="dot">•</span>
-          <a href="https://github.com/your-username" target="_blank" rel="noreferrer">GitHub</a>
-          <span class="dot">•</span>
-          <span>所在城市</span>
-        </div>
-
-        <div class="cta">
-          <a class="btn" href="#projects">查看项目</a>
-          <a class="btn btn-ghost" href="#experience">查看经历</a>
-        </div>
+    <div class="container">
+      <h1 class="name">Eugene NG</h1>
+      <p class="headline">信号处理 / 深度学习算法工程师</p>
+      <div class="contact">
+        <a href="mailto:eugene.ng@outlook.com">eugene.ng@outlook.com</a>
+        <span class="sep">|</span>
+        <a href="https://github.com/Eugene-22" target="_blank" rel="noreferrer">github.com/Eugene-22</a>
+        <span class="sep">|</span>
+        <span>广东 · 中国</span>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <!-- 简介 -->
-    <section class="card">
-      <h2>简介</h2>
-      <p>
-        用 2-4 句话概括你是谁、擅长什么、做过什么、要找什么。
-        例如：具备 XX 年开发经验，熟悉 Java/Spring/MyBatis，参与过 XXX 系统建设，负责 XXX 模块落地与优化。
-      </p>
-      <ul class="tags">
-        <li>Java</li><li>Spring Boot</li><li>MyBatis</li><li>SQL</li><li>Python</li><li>Linux</li>
+
+    <!-- 教育经历 -->
+    <section>
+      <h2 class="section-title">教育经历</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>北京航空航天大学</h3>
+          <span class="meta">2022.09 – 2025.06</span>
+        </div>
+        <p class="entry-sub">信息与通信工程（学术型硕士）</p>
+        <p class="desc">研究方向：数字信号处理、深度学习、雷达抗干扰</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>武汉理工大学</h3>
+          <span class="meta">2018.09 – 2022.06</span>
+        </div>
+        <p class="entry-sub">通信工程（本科）</p>
+        <p class="desc">主修课程：数据结构、高级程序设计、单片机及嵌入式系统原理、数字电路基础、信息理论与编码</p>
+        <p class="desc">GPA：4.06 / 5.0&ensp;|&ensp;英语水平：CET-6 510&ensp;·&ensp;CET-4 529</p>
+      </div>
+    </section>
+
+    <!-- 工作经历 -->
+    <section>
+      <h2 class="section-title">工作经历</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>南网数字运营软件科技（广东）有限公司</h3>
+          <span class="meta">2025.07 – 至今</span>
+        </div>
+
+        <div class="sub-entry">
+          <h4>OCR 设备铭牌图片信息识别</h4>
+          <ul>
+            <li>负责电力设备铭牌图像数据预筛选工作，搭建图片预筛选自动判定节点，基于大模型提示词工程实现结构化判定并输出分类结果和原因，提升后续 OCR 识别链路的数据质量与效率。</li>
+            <li>实现接口与输出标准化，统一 JSON 输出字段与路径，固化提示词版本与推理参数，确保筛选结果可回归验证。</li>
+            <li>基于 Python 构建批量测试与自动化验证流程，自动调用大模型并输出图片分类结果，实现约 100 张/2 分钟的批量处理效率，显著缩短人工处理周期。</li>
+          </ul>
+        </div>
+
+        <div class="sub-entry">
+          <h4>电网管理平台实时数据展示消缺</h4>
+          <ul>
+            <li>完成前端实时电力设备数据显示与后端数据库字段的映射匹配和联调，确保接口返回数据可以正确解析并按业务规则正常展示，保障电力设备实时数据的稳定可视化展示。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 项目经历 -->
+    <section>
+      <h2 class="section-title">项目经历</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>基于卷积-自注意力机制的雷达间歇采样转发干扰抑制模型</h3>
+          <span class="meta">2024.04 – 2024.08</span>
+        </div>
+        <ul>
+          <li>针对电子对抗场景中雷达接收信号混入干扰机产生的间歇采样转发干扰问题，提出卷积+多头自注意力融合的 Transformer 雷达序列模型，用于端到端抑制间歇采样转发干扰并重构真实回波信号，实现目标回波与干扰信号的时域解耦。</li>
+          <li>引入一维卷积模块实现通道扩展，通过 GLU 门控单元增强局部时序特征建模能力，缓解传统注意力机制的局部建模不足问题。</li>
+          <li>设计多组对比实验，分析不同编码器-解码器层数下的模型表现，评估模型在干扰抑制精度与实时推理效率之间的权衡。</li>
+          <li>模型在干扰抑制后的 PSLR（峰值抑制比）值大多稳定分布在 27.7–28 dB 之间，能在低 SNR、高 JSR 条件下准确重构回波信号。</li>
+        </ul>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>基于深度学习及决策级融合的雷达欺骗干扰信号识别模型</h3>
+          <span class="meta">2023.10 – 2024.02</span>
+        </div>
+        <ul>
+          <li><strong>序列信号多维特征提取：</strong>基于信号的幅度序列与相位序列双维度特征，通过并行卷积分支进行特征提取，分别采用通道注意力机制和空间注意力机制提升模型对不同维度的特征关注能力，并通过特征融合层关联不同维度特征，在低信噪比条件下实现干扰信号 97.2% 的检测准确率。</li>
+          <li><strong>时频域图像特征提取：</strong>构建基于短时傅里叶变换的干扰信号时频图数据集，基于卷积神经网络构建雷达信号时频图像识别模型，并通过全局平均池化有效减少网络参数，最终达到 96.8% 的干扰信号检测准确率。</li>
+          <li><strong>决策级融合：</strong>通过投票法实现两个干扰检测模型的决策级融合，分别采取最大置信度投票策略、加权投票策略和基于规则的投票策略构建融合模型，干扰信号检测准确率进一步提升。</li>
+          <li><strong>论文成果：</strong>A Hybrid 1D-2D CNN with Decision-Level Fusion for Radar Active Deception Jamming Recognition, <em>ISEAE 2025</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 实习经历 -->
+    <section>
+      <h2 class="section-title">实习经历</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>天津航空机电有限公司</h3>
+          <span class="meta">2023.07 – 2023.08</span>
+        </div>
+        <p class="desc">基于 SRK240 雷达系统开发板完成设备系统调试，测试多种雷达波形的载波调制方案实现多目标物体的方位检测，有效提升雷达对探测目标的定位能力。撰写技术文档，形成标准化调试与测试流程，为后续研发提供参考。</p>
+      </div>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>贝卡尔特（中国）技术研发有限公司</h3>
+          <span class="meta">2022.07 – 2022.09</span>
+        </div>
+        <p class="desc">针对轮胎高速动态测试中多源振动信号相互干扰的问题，提出并实现自适应分数阶傅里叶变换（FrFT）滤波算法，通过动态优化 FrFT 旋转角度实现干扰能量在分数域高效聚集，结合动态阈值函数抑制主瓣噪声，提升干扰能量聚集效率与主瓣噪声抑制能力，增强胎面-路面接触力信号特征提取精度，为后续测试分析提供可靠数据支撑。</p>
+      </div>
+    </section>
+
+    <!-- 获奖情况 -->
+    <section>
+      <h2 class="section-title">获奖情况</h2>
+
+      <div class="entry">
+        <div class="entry-head">
+          <h3>APMCM 亚太地区大学生数学建模竞赛 — 量子计算分赛道二等奖</h3>
+        </div>
+        <p class="desc"><strong>担任职责：</strong>数据分析、数学模型构建、算法优化及编程实现</p>
+        <ul>
+          <li>针对德国信用评分数据集，设计特征选择方案，并利用模拟退火算法求解最优特征子集，有效提升分类性能并减少特征冗余。</li>
+          <li>基于二进制 QUBO 模型，将特征选择与深度学习超参数优化问题建模为组合优化任务，并在 MNIST 数据集及 LeNet 图像识别框架上开展超参数优化实验，验证量子辅助优化在深度学习领域中提升模型精度与降低计算成本的可行性。</li>
+        </ul>
+      </div>
+
+      <ul class="award-list">
+        <li>全国大学生数学竞赛二等奖</li>
+        <li>湖北省大学生数学竞赛二等奖</li>
+        <li>北京航空航天大学学业奖学金</li>
+        <li>武汉理工大学优秀毕业生</li>
+        <li>武汉理工大学校三好学生</li>
       </ul>
     </section>
 
-    <!-- 技能 -->
-    <section class="card">
-      <h2>技能</h2>
-      <div class="two-col">
-        <div>
-          <h3>技术栈</h3>
-          <ul>
-            <li>后端：Spring Boot / REST / MyBatis / JPA（按实际改）</li>
-            <li>数据库：MySQL / PostgreSQL（按实际改）</li>
-            <li>工程化：Git / Gradle / Maven / Docker（按实际改）</li>
-          </ul>
-        </div>
-        <div>
-          <h3>能力点</h3>
-          <ul>
-            <li>需求分析、接口设计、模块拆分与交付</li>
-            <li>性能与稳定性优化、日志与故障定位</li>
-            <li>跨团队沟通与推进</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 项目 -->
-    <section id="projects" class="card">
-      <h2>项目</h2>
-
-      <article class="item">
-        <div class="item-head">
-          <h3>项目名称 A</h3>
-          <div class="meta">2025.01 - 2025.06｜角色：后端开发</div>
-        </div>
-        <p class="desc">
-          一句话说明项目背景与价值（业务场景/用户规模/目标）。
-        </p>
-        <ul>
-          <li>负责：XXX 模块设计与实现，输出接口文档与联调方案。</li>
-          <li>优化：将 XX 接口耗时从 800ms 降到 120ms（示例），提升稳定性。</li>
-          <li>落地：上线后支持 XX 用户/日活/调用量（有数据就写）。</li>
-        </ul>
-        <div class="links">
-          <a href="https://github.com/your-username/your-project" target="_blank" rel="noreferrer">代码</a>
-          <span class="dot">•</span>
-          <a href="https://your-demo-link" target="_blank" rel="noreferrer">演示</a>
-        </div>
-      </article>
-
-      <article class="item">
-        <div class="item-head">
-          <h3>项目名称 B</h3>
-          <div class="meta">2024.09 - 2024.12｜角色：算法/研究/开发</div>
-        </div>
-        <p class="desc">写清楚：问题是什么，你的方法是什么，结果如何。</p>
-        <ul>
-          <li>实现：XXX 模型/方案，核心指标达到 XX。</li>
-          <li>工程：训练/推理流程、数据处理、可视化与评估。</li>
-        </ul>
-      </article>
-    </section>
-
-    <!-- 经历 -->
-    <section id="experience" class="card">
-      <h2>经历</h2>
-      <div class="item">
-        <div class="item-head">
-          <h3>公司/学校｜部门/学院｜职位/方向</h3>
-          <div class="meta">2023.09 - 至今｜所在城市</div>
-        </div>
-        <ul>
-          <li>做了什么：用动词开头，体现影响。</li>
-          <li>结果：量化指标或可验证成果（交付、上线、论文、竞赛）。</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 教育 -->
-    <section class="card">
-      <h2>教育背景</h2>
-      <div class="item">
-        <div class="item-head">
-          <h3>学校名称｜专业</h3>
-          <div class="meta">20XX - 20XX</div>
-        </div>
-        <ul>
-          <li>研究方向/课程：XXX</li>
-          <li>成绩/奖项（可选）：XXX</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- 证书/奖项（可选） -->
-    <section class="card">
-      <h2>证书与奖项</h2>
-      <ul>
-        <li>证书 A（年份）</li>
-        <li>竞赛/奖项 B（年份）</li>
+    <!-- 专业技能 -->
+    <section>
+      <h2 class="section-title">专业技能</h2>
+      <ul class="skill-list">
+        <li>熟悉 Python 基本语法，能够在 PyTorch 框架构建、训练与调优深度学习模型。</li>
+        <li>具备 CNN、Transformer 等框架的设计与实现经验，掌握特征级融合、决策级融合等模型优化方法。</li>
+        <li>熟悉不同的信号分析方法，熟练掌握 Matlab 等编程软件对数字信号进行数学建模与分析。</li>
+        <li>熟悉 Java、JavaScript 基本语法，掌握 Java Web 基本开发流程。</li>
       </ul>
     </section>
+
+    <!-- 个人评价 -->
+    <section>
+      <h2 class="section-title">个人评价</h2>
+      <p class="desc">善于沟通，责任心强：本科期间担任班级心理委员，积极乐观，团队合作能力强，善于组织协调团队工作。</p>
+      <p class="desc">热爱运动，积极乐观：坚持体育锻炼，喜欢滑雪、跑步等运动，在校期间体质健康测试良好，身体素质优秀。</p>
+    </section>
+
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <small>© <span id="year"></span> 你的姓名｜Powered by GitHub Pages</small>
+      <small>© <span id="year"></span> Eugene NG</small>
     </div>
   </footer>
 
