@@ -2,191 +2,175 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Eugene NG — 多模态感知 / 序列建模算法工程师（具身智能方向）</title>
-  <meta name="description" content="Eugene NG 个人简历 — 信息与通信工程硕士，专注多模态学习、Transformer 序列建模，目标具身智能/VLA 方向" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Eugene NG — 多模态感知 / 序列建模（具身智能方向）</title>
+  <meta name="description" content="Eugene NG 个人简历 — 信息与通信工程硕士，专注多模态学习、Transformer 序列建模，目标具身智能方向" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
 
-  <header class="site-header">
-    <h1 class="name">Eugene NG</h1>
-    <p class="headline">多模态感知 / 序列建模算法工程师（具身智能方向）</p>
-    <div class="contact">
-      <a href="mailto:wzgahaaa@gmail.com">wzgahaaa@gmail.com</a>
-      <span class="sep">|</span>
-      <span>[需补充电话]</span>
-      <span class="sep">|</span>
-      <span>深圳 · 中国</span>
-      <span class="sep">|</span>
-      <a href="https://github.com/Eugene-22" target="_blank" rel="noreferrer">github.com/Eugene-22</a>
+  <div class="wrapper-masthead">
+    <div class="container">
+      <header class="masthead clearfix">
+
+        <div class="site-info">
+          <h1 class="site-name">Eugene NG</h1>
+          <p class="site-description">多模态感知 / 序列建模（具身智能方向）</p>
+        </div>
+
+        <nav>
+          <a href="mailto:wzgahaaa@gmail.com">Email</a>
+          <a href="https://github.com/Eugene-22" target="_blank" rel="noreferrer">GitHub</a>
+          <span style="color:#999;font-size:15px;">深圳 · 中国 &ensp;|&ensp; [需补充电话]</span>
+        </nav>
+
+      </header>
     </div>
-  </header>
+  </div>
 
-  <main>
+  <div id="main" role="main" class="container">
+    <main>
 
-    <!-- 教育经历 -->
-    <section>
-      <h2 class="section-title">教育经历</h2>
+      <!-- 教育经历 -->
+      <section>
+        <h2>教育经历</h2>
 
-      <div class="entry">
-        <div class="entry-head">
-          <strong>北京航空航天大学</strong>
-          <span class="meta">2022.09 – 2025.06</span>
-        </div>
-        <div class="entry-sub">信息与通信工程 学术型硕士</div>
-        <div class="desc">研究方向：深度学习 · 多模态信号处理 · Transformer 序列建模</div>
-      </div>
-
-      <div class="entry">
-        <div class="entry-head">
-          <strong>武汉理工大学</strong>
-          <span class="meta">2018.09 – 2022.06</span>
-        </div>
-        <div class="entry-sub">通信工程 本科</div>
-        <div class="desc">GPA 4.06 / 5.0 &ensp;|&ensp; CET-6 510 · CET-4 529</div>
-        <div class="desc">主修：数据结构 · 高级程序设计 · 单片机与嵌入式系统 · 数字电路 · 信息理论与编码</div>
-      </div>
-    </section>
-
-    <!-- 项目经历（前置 — VLA 相关性最强证据） -->
-    <section>
-      <h2 class="section-title">项目经历</h2>
-
-      <!-- 项目 1 — Transformer Seq2Seq（对应 VLA 架构能力） -->
-      <div class="entry">
-        <div class="entry-head">
-          <strong>基于 Transformer 的序列到序列信号重建模型</strong>
-          <span class="meta">2024.04 – 2024.08</span>
-        </div>
-        <ul>
-          <li>设计并实现卷积–多头自注意力融合的 Transformer <strong>编码器-解码器</strong>序列模型，端到端完成信号重建任务，实现源序列到目标序列的时域解耦映射。</li>
-          <li>引入一维卷积 + <strong>GLU 门控单元</strong>增强局部时序特征建模，缓解纯自注意力机制的局部感知不足，提升序列建模的细粒度表达能力。</li>
-          <li>设计编码器-解码器层数<strong>消融实验</strong>，系统评估模型容量、重建精度与推理延迟之间的权衡关系。</li>
-          <li>重建质量 PSLR 稳定在 <strong>27.7–28 dB</strong>，验证了模型在低 SNR、高干扰条件下的鲁棒序列映射能力。</li>
-        </ul>
-      </div>
-
-      <!-- 项目 2 — 多模态融合（对应 VLA 多模态感知能力） -->
-      <div class="entry">
-        <div class="entry-head">
-          <strong>多模态特征融合与注意力机制信号识别模型</strong>
-          <span class="meta">2023.10 – 2024.02</span>
-        </div>
-        <ul>
-          <li>构建<strong>双流并行卷积架构</strong>（1D 幅度-相位序列 + 2D 时频图），分别引入通道注意力与空间注意力机制，实现跨维度特征交互与自适应融合。</li>
-          <li>基于 STFT 构建时频图数据集，通过 CNN + 全局平均池化实现时频域识别模型，检测准确率 <strong>96.8%</strong>，验证多表征协同的有效性。</li>
-          <li>1D 序列分支在低 SNR 条件下检测准确率 <strong>97.2%</strong>，双模态融合后准确率进一步提升。</li>
-          <li>设计三种<strong>决策级融合策略</strong>（最大置信度投票、加权投票、规则投票），实现多模型协同推理与不确定性整合。</li>
-        </ul>
-        <div class="pub-line">
-          论文：A Hybrid 1D-2D CNN with Decision-Level Fusion for Radar Active Deception Jamming Recognition, <em>ISEAE 2025</em>
-        </div>
-      </div>
-    </section>
-
-    <!-- 工作经历 — 强化 LLM/VLM 相关经验 -->
-    <section>
-      <h2 class="section-title">工作经历</h2>
-
-      <div class="entry">
-        <div class="entry-head">
-          <strong>南网数字运营软件科技（广东）有限公司</strong>
-          <span class="meta">2025.07 – 至今</span>
+        <div class="entry">
+          <div class="entry-head">
+            <strong>北京航空航天大学</strong>
+            <span class="meta">2022.09 – 2025.06</span>
+          </div>
+          <p class="entry-sub">信息与通信工程 学术型硕士</p>
+          <p class="desc">研究方向：深度学习 · 多模态信号处理 · Transformer 序列建模</p>
         </div>
 
-        <div class="sub-entry">
-          <div class="sub-head">基于大模型的图像自动判定与结构化信息提取</div>
+        <div class="entry">
+          <div class="entry-head">
+            <strong>武汉理工大学</strong>
+            <span class="meta">2018.09 – 2022.06</span>
+          </div>
+          <p class="entry-sub">通信工程 本科</p>
+          <p class="desc">GPA 4.06 / 5.0 &ensp;|&ensp; CET-6 510 · CET-4 529</p>
+          <p class="desc">主修：数据结构 · 高级程序设计 · 单片机与嵌入式系统 · 数字电路 · 信息理论与编码</p>
+        </div>
+      </section>
+
+      <!-- 项目经历 -->
+      <section>
+        <h2>项目经历</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>基于 Transformer 的序列到序列信号重建模型</strong>
+            <span class="meta">2024.04 – 2024.08</span>
+          </div>
           <ul>
-            <li>构建基于大模型提示词工程的图像自动判定流水线，实现<strong>端到端</strong>图像语义理解、结构化分类与可解释判定输出。</li>
-            <li>设计统一 JSON 输出 Schema，固化提示词版本与推理超参数，确保判定结果<strong>可回归、可复现</strong>。</li>
-            <li>基于 Python 构建自动化批量测试与验证流水线，实现 <strong>~100 张/2 分钟</strong>的高吞吐处理效率。</li>
+            <li>设计并实现卷积–多头自注意力融合的 Transformer <strong>编码器-解码器</strong>序列模型，端到端完成信号重建任务，实现源序列到目标序列的时域解耦映射。</li>
+            <li>引入一维卷积 + <strong>GLU 门控单元</strong>增强局部时序特征建模，缓解纯自注意力机制的局部感知不足，提升序列建模的细粒度表达能力。</li>
+            <li>设计编码器-解码器层数<strong>消融实验</strong>，系统评估模型容量、重建精度与推理延迟之间的权衡关系。</li>
+            <li>重建质量 PSLR 稳定在 <strong>27.7–28 dB</strong>，验证了模型在低 SNR、高干扰条件下的鲁棒序列映射能力。</li>
           </ul>
+          <p class="tech-line">技术栈：PyTorch · Transformer (Encoder-Decoder) · Multi-head Self-Attention · GLU · 1D CNN</p>
         </div>
 
-        <div class="sub-entry">
-          <div class="sub-head">电网管理平台实时数据展示消缺</div>
+        <div class="entry">
+          <div class="entry-head">
+            <strong>多模态特征融合与注意力机制信号识别模型</strong>
+            <span class="meta">2023.10 – 2024.02</span>
+          </div>
           <ul>
-            <li>完成前端实时数据展示与后端数据库字段映射联调，保障实时数据稳定可视化。</li>
+            <li>构建<strong>双流并行卷积架构</strong>（1D 幅度-相位序列 + 2D 时频图），分别引入通道注意力与空间注意力机制，实现跨维度特征交互与自适应融合。</li>
+            <li>基于 STFT 构建时频图数据集，通过 CNN + 全局平均池化实现时频域识别模型，检测准确率 <strong>96.8%</strong>，验证多表征协同的有效性。</li>
+            <li>1D 序列分支在低 SNR 条件下检测准确率 <strong>97.2%</strong>，双模态融合后准确率进一步提升。</li>
+            <li>设计三种<strong>决策级融合策略</strong>（最大置信度投票、加权投票、规则投票），实现多模型协同推理与不确定性整合。</li>
           </ul>
+          <p class="pub-line">
+            论文：A Hybrid 1D-2D CNN with Decision-Level Fusion for Radar Active Deception Jamming Recognition, <em>ISEAE 2025</em>
+          </p>
+          <p class="tech-line">技术栈：PyTorch · CNN · Channel/Spatial Attention · STFT 时频分析 · 决策级融合 · 多模态学习</p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- 实习经历 — 压缩，保留信号处理证据 -->
-    <section>
-      <h2 class="section-title">实习经历</h2>
+      <!-- 工作经历 -->
+      <section>
+        <h2>工作经历</h2>
 
-      <div class="entry">
-        <div class="entry-head">
-          <strong>贝卡尔特（中国）技术研发有限公司</strong>
-          <span class="meta">2022.07 – 2022.09</span>
+        <div class="entry">
+          <div class="entry-head">
+            <strong>南网数字运营软件科技（广东）有限公司</strong>
+            <span class="meta">2025.07 – 至今</span>
+          </div>
+
+          <div class="sub-entry">
+            <p class="sub-head">基于大模型的图像自动判定与结构化信息提取</p>
+            <ul>
+              <li>构建基于大模型提示词工程的图像自动判定流水线，实现<strong>端到端</strong>图像语义理解、结构化分类与可解释判定输出。</li>
+              <li>设计统一 JSON 输出 Schema，固化提示词版本与推理超参数，确保判定结果<strong>可回归、可复现</strong>。</li>
+              <li>基于 Python 构建自动化批量测试与验证流水线，实现 <strong>~100 张/2 分钟</strong>的高吞吐处理效率。</li>
+            </ul>
+            <p class="tech-line">技术栈：Python · LLM/VLM 提示词工程 · JSON Schema · 批量自动化测试</p>
+          </div>
+
+          <div class="sub-entry">
+            <p class="sub-head">电网管理平台实时数据展示消缺</p>
+            <ul>
+              <li>完成前端实时数据展示与后端数据库字段映射联调，保障实时数据稳定可视化。</li>
+            </ul>
+            <p class="tech-line">技术栈：Java · JavaScript · 前端-后端联调 · 实时数据可视化</p>
+          </div>
         </div>
-        <ul>
-          <li>针对多源振动信号干扰问题，提出自适应分数阶傅里叶变换（FrFT）滤波算法，动态优化旋转角度实现干扰能量在分数域高效聚集。</li>
-          <li>结合动态阈值函数抑制主瓣噪声，增强信号特征提取精度，为后续分析提供可靠数据支撑。</li>
+      </section>
+
+      <!-- 实习经历 -->
+      <section>
+        <h2>实习经历</h2>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>贝卡尔特（中国）技术研发有限公司</strong>
+            <span class="meta">2022.07 – 2022.09</span>
+          </div>
+          <ul>
+            <li>针对多源振动信号干扰问题，提出自适应分数阶傅里叶变换（FrFT）滤波算法，动态优化旋转角度实现干扰能量在分数域高效聚集。</li>
+            <li>结合动态阈值函数抑制主瓣噪声，增强信号特征提取精度，为后续分析提供可靠数据支撑。</li>
+          </ul>
+          <p class="tech-line">技术栈：MATLAB · FrFT · 自适应滤波 · 信号特征提取</p>
+        </div>
+
+        <div class="entry">
+          <div class="entry-head">
+            <strong>天津航空机电有限公司</strong>
+            <span class="meta">2023.07 – 2023.08</span>
+          </div>
+          <ul>
+            <li>基于 SRK240 雷达系统开发板完成设备调试，测试多种载波调制方案实现多目标方位检测，撰写标准化调试流程文档。</li>
+          </ul>
+          <p class="tech-line">技术栈：雷达系统调试 · 载波调制 · 硬件测试 · 技术文档</p>
+        </div>
+      </section>
+
+      <!-- 获奖与荣誉 -->
+      <section>
+        <h2>获奖与荣誉</h2>
+        <ul class="award-list">
+          <li>APMCM 亚太地区大学生数学建模竞赛 — 量子计算赛道 <strong>二等奖</strong>（数据分析·模型构建·算法优化）</li>
+          <li>全国大学生数学竞赛 <strong>二等奖</strong> · 湖北省大学生数学竞赛 <strong>二等奖</strong></li>
+          <li>北京航空航天大学学业奖学金</li>
+          <li>武汉理工大学优秀毕业生 · 校三好学生</li>
         </ul>
-      </div>
+      </section>
 
-      <div class="entry">
-        <div class="entry-head">
-          <strong>天津航空机电有限公司</strong>
-          <span class="meta">2023.07 – 2023.08</span>
-        </div>
-        <ul>
-          <li>基于 SRK240 雷达系统开发板完成设备调试，测试多种载波调制方案实现多目标方位检测，撰写标准化调试流程文档。</li>
-        </ul>
-      </div>
-    </section>
+    </main>
+  </div>
 
-    <!-- 专业技能 — 按 VLA 岗位重组分类 (§14.3) -->
-    <section>
-      <h2 class="section-title">专业技能</h2>
-      <div class="skills-grid">
-        <div class="skill-cat">
-          <strong>编程语言</strong>
-          <span>Python, MATLAB, Java, JavaScript</span>
-        </div>
-        <div class="skill-cat">
-          <strong>深度学习</strong>
-          <span>PyTorch, Transformer (Encoder-Decoder), Multi-head Self-Attention, CNN, GLU</span>
-        </div>
-        <div class="skill-cat">
-          <strong>多模态与融合</strong>
-          <span>特征级/决策级融合, 跨模态注意力（1D+2D）, 多表征协同推理</span>
-        </div>
-        <div class="skill-cat">
-          <strong>大模型应用</strong>
-          <span>提示词工程, 结构化输出, 自动评估流水线, JSON Schema 设计</span>
-        </div>
-        <div class="skill-cat">
-          <strong>信号与序列建模</strong>
-          <span>时序建模, 时频分析 (STFT), FrFT, 数字信号处理</span>
-        </div>
-        <div class="skill-cat">
-          <strong>工程工具</strong>
-          <span>Git, Linux, 批量自动化测试, 技术文档编写</span>
-        </div>
-      </div>
-    </section>
-
-    <!-- 获奖与荣誉 -->
-    <section>
-      <h2 class="section-title">获奖与荣誉</h2>
-      <ul class="award-list">
-        <li>APMCM 亚太地区大学生数学建模竞赛 — 量子计算赛道 <strong>二等奖</strong>（数据分析·模型构建·算法优化）</li>
-        <li>全国大学生数学竞赛 <strong>二等奖</strong> · 湖北省大学生数学竞赛 <strong>二等奖</strong></li>
-        <li>北京航空航天大学学业奖学金</li>
-        <li>武汉理工大学优秀毕业生 · 校三好学生</li>
-      </ul>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <small>© <span id="year"></span> Eugene NG</small>
-  </footer>
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer>
+        <small>© <span id="year"></span> Eugene NG</small>
+      </footer>
+    </div>
+  </div>
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
